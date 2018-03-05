@@ -62,3 +62,30 @@ for(var i=0; i<winnerList.length; i++){
     }
 }
 challengeAnswer2.innerHTML += "<h5>" + count + "</h5>";
+
+// Challenge #3_________________________________________________
+//  Arithmetic
+// Given an object containing two numbers and an arithmetic operator, return the appropriate math result.
+
+// The four operators are "add", "subtract", "divide", "multiply".
+
+// A few examples:
+
+var test1 = {a: 5, b:2, operator: "add"};  //7
+var test1 = {a: 5, b:2, operator: "subtract"}; //3
+var test1 = {a: 5, b:2, operator: "multiply"}; //10
+var test1 = {a: 5, b:2, operator: "divide"}; //2.5
+var answer;
+var challengeAnswer3 = document.getElementById("challenge-3");
+
+  if(test1.operator==="add"){
+    answer = test1.a + test1.b;
+  } else if (test1.operator==="subtract"){
+    answer = test1.a - test1.b;
+  } else if (test1.operator==="multiply"){
+    answer = test1.a * test1.b;
+  } else if (test1.operator==="divide"){
+    answer = test1.a / test1.b; 
+  }
+  
+challengeAnswer3.innerHTML += "<h5>" + answer + "</h5>";
