@@ -89,3 +89,21 @@ var challengeAnswer3 = document.getElementById("challenge-3");
   }
   
 challengeAnswer3.innerHTML += "<h5>" + answer + "</h5>";
+
+// Challenge #4_______________________________________________
+// Ziiiiip!
+// Let's implement the zipObject function that takes and array of names and an array of ages and smashes them into one object.
+
+// Example:
+
+var names = ['fred', 'barney'];
+var ages = [30,40];
+//Output:  { 'fred': 30, 'barney': 40 }
+var answer= {};
+var challengeAnswer4 = document.getElementById("challenge-4");
+
+for (var i = 0; i < names.length; i++){
+    answer[names[i]] = ages[i];
+}
+
+challengeAnswer4.innerHTML += "<h5>" + JSON.stringify(answer) + "</h5>";
